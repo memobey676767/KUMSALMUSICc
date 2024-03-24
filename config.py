@@ -36,7 +36,7 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BAClMaYD1Qufd7FVYOnH3mH5GQsqQPqWUXFKNnd4Oo8VEmy-AvjEzIRkyUSBvtZU5Phegk3fQBrQm4DvXOgdx3WpoYJ-CtdxaqyBqkqlRlFptoVpwhHMVSuCM0im4JZ0szQz4aNUfpvbC8qFAx9_mF_uYJOB6Nc70aUIkU7mCJIUi_W1uKCaKHUkCdUKWKD0SFDnQi5cwMVRvDjKfU53VaDmkwNQyjZBD3ZIdSaSLDsfLAq6ky3D09X0MvIaaNYyG6aj1csXAxP1m628XzHGA5YC3_iSTZ0vMPilEQfZ3H5CC_7AcR_I1O9RYpq_wkd88k9Om0UT_vfq78079qpIKZVSAAAAAaR10EAA")
+STRING1 = getenv("STRING_SESSION", "BAB3vvwYz8RHKcRP-IH7FJL47VhUQe-Ch03XX8HnLpVC6tWhuNRtSZWAci6DcEfiGP7woosz47RD4HaqNuzh4L4xw69D09uTUNfld-mYnhhb75809-8xBySYfs57kC_MrKFlUZib6sRA6SGHrT1oopUAXp382GLnAFenVX8FUVlNm99bix9MzLsH1Ckme0ptKhx78rLCMsHkuIOT-NRAmOwZ78UT5-sTDFzG3jCUi-AP8W9kxanWCT5k1x0vV_7-w78vps9IGfzjPTIvM8QqwBQYUqOsRrXCXTHc9jihLl-3J1jXvyg9Kig7nar1wsNVJvm6Wbv4Z0GTqoFuhswXOQoBAAAAAaR10EAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -68,7 +68,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/25efe6aa029c6baea73ea.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/e03cc83b0c9219c804c9e.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
