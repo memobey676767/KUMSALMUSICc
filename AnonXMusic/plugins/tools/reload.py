@@ -46,7 +46,7 @@ async def reload_admin_cache(client, message: Message, _):
         await message.reply_text(_["reload_3"])
 
 
-@app.on_message(filters.command(["reboot"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["restart"]) & filters.group & ~BANNED_USERS)
 @AdminActual
 async def restartbot(client, message: Message, _):
     mystic = await message.reply_text(_["reload_4"].format(app.mention))
