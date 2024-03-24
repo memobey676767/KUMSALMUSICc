@@ -13,7 +13,7 @@ def help_pannel(_, START: Union[bool, int] = None):
             callback_data=f"settingsback_helper",
         ),
     ]
-    mark = second else START
+    mark = second if START is None else START
     upl = InlineKeyboardMarkup(
         [
             [
