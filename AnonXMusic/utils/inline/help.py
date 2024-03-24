@@ -6,17 +6,14 @@ from AnonXMusic import app
 import config
 
 def help_pannel(_, START: Union[bool, int] = None):
-    first = [
-               InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-               InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
-           ],
+    first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
     second = [
         InlineKeyboardButton(
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
         ),
     ]
-    mark = second if START else first
+    mark = second if START
     upl = InlineKeyboardMarkup(
         [
             [
@@ -25,6 +22,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                     url=f"https://t.me/{app.username}?startgroup=true",
                 )
             ],
+            [
                 InlineKeyboardButton(
                     text=_["H_B_1"],
                     callback_data="help_callback hb1",
