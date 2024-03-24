@@ -39,8 +39,8 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
              ],
              [
-                 InlineKeyboardButton(text="✚ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ ✚", url="https://www.youtube.com/@EpikTv87"),
                  InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+                 InlineKeyboardButton(text="✚ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ ✚", url="https://www.youtube.com/@EpikTv87"),
             ],
             mark,
         ]
