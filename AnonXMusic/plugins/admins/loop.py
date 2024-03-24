@@ -28,13 +28,13 @@ async def admins(cli, message: Message, _, chat_id):
             )
         else:
             return await message.reply_text(_["admin_17"])
-    elif state.lower() == "acik":
+    elif state.lower() == "enable":
         await set_loop(chat_id, float("inf"))  # Sınırsız olarak değiştirdik
         return await message.reply_text(
             text=_["admin_18"].format("sınırsız", message.from_user.mention),
             reply_markup=close_markup(_),
         )
-    elif state.lower() == "kapali":
+    elif state.lower() == "disable":
         await set_loop(chat_id, 0)
         return await message.reply_text(
             _["admin_19"].format(message.from_user.mention),
