@@ -28,14 +28,14 @@ from config import BANNED_USERS, lyrical
 @app.on_message(
     filters.command(
         [
-            "play",
-            "vplay",
-            "cplay",
-            "cvplay",
-            "playforce",
-            "vplayforce",
-            "cplayforce",
-            "cvplayforce",
+            "oynat",
+            "voynat",
+            "coynat",
+            "cvoynat",
+            "oynatforce",
+            "voynatforce",
+            "coynatforce",
+            "cvoynatforce",
         ]
     )
     & filters.group
@@ -505,7 +505,7 @@ async def play_music(client, CallbackQuery, _):
 async def anonymous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
+            "» 𝖲̧𝗎 𝖠𝖽ı𝗆𝗅𝖺𝗋ı 𝖳𝖺𝗄𝗂𝗉 𝖤𝖽𝗂𝗇 !\n\n➻ 𝖦𝗋𝗎𝗉 𝖺𝗒𝖺𝗋𝗅𝖺𝗋ı𝗇𝖺 𝗀𝗂𝖽𝗂𝗇 .\n➻ 𝖸𝗈̈𝗇𝖾𝗍𝗂𝖼𝗂𝗅𝖾𝗋 𝖻𝗈̈𝗅𝗎̈𝗆𝗎̈𝗇𝖾 𝗀𝗂𝗋𝗂𝗇 .\n➻ 𝗂𝗌𝗆𝗂𝗇𝗂𝗓𝖾 𝗍ı𝗄𝗅𝖺𝗒ı𝗇 .\n➻ (𝖠𝗇𝗈𝗇𝗂𝗆 𝗄𝖺𝗅) 𝗒𝖾𝗍𝗄𝗂𝗌𝗂𝗇𝗂 𝗄𝖺𝗉𝖺𝗍ı𝗇 .",
             show_alert=True,
         )
     except:
