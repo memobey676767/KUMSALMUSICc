@@ -19,7 +19,7 @@ from AnonXMusic.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
-@app.on_message(filters.command(["stats", "gstats"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["istatistik"]) & filters.group & ~BANNED_USERS)
 @language
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
@@ -93,7 +93,7 @@ async def bot_stats(client, CallbackQuery, _):
         else:
             cpu_freq = f"{round(cpu_freq, 2)}ᴍʜᴢ"
     except:
-        cpu_freq = "ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ"
+        cpu_freq = "𝗁𝖺𝗍𝖺"
     hdd = psutil.disk_usage("/")
     total = hdd.total / (1024.0**3)
     used = hdd.used / (1024.0**3)
