@@ -40,8 +40,8 @@ def help_pannel(_, START: Union[bool, int] = None):
                InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
                InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
            ],
+       ]
             mark,
-        ]
     )
     return upl
 
