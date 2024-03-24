@@ -5,47 +5,45 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from AnonXMusic import app
 import config
 
-from typing import Union
-
 def help_pannel(_, START: Union[bool, int] = None):
+    first = [
+               InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+               InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+           ],
     second = [
         InlineKeyboardButton(
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
-        )
+        ),
     ]
-    mark = second if START else None
+    mark = second if START else first
     upl = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
                     text=_["S_B_3"],
-                    url=f"https://t.me/{app.username}?startgroup=true"
+                    url=f"https://t.me/{app.username}?startgroup=true",
                 )
             ],
-            [
                 InlineKeyboardButton(
                     text=_["H_B_1"],
-                    callback_data="help_callback hb1"
+                    callback_data="help_callback hb1",
                 ),
                 InlineKeyboardButton(
                     text=_["H_B_2"],
-                    callback_data="help_callback hb2"
-                )
+                    callback_data="help_callback hb2",
+                ),
             ],
             [
                 InlineKeyboardButton(
-                text=_["H_B_3"],
-                        callback_data="help_callback hb3"
-                )
-            ],
-            [
-                InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-                InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT)
-            ],
-            *((mark,) if mark else ())
+                    text=_["H_B_3"],
+                    callback_data="help_callback hb3",
+                ),
+           ],
+            mark,
         ]
-        )
+    )
+    return upl
 
 
 def help_back_markup(_):
