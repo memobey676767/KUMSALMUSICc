@@ -3,7 +3,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from AnonXMusic import app
-
+import config
 
 def help_pannel(_, START: Union[bool, int] = None):
     first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
@@ -18,6 +18,11 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
+                    text=_["S_B_3"],
+                    url=f"https://t.me/{app.username}?startgroup=true",
+                )
+            ],
+                InlineKeyboardButton(
                     text=_["H_B_1"],
                     callback_data="help_callback hb1",
                 ),
@@ -31,7 +36,11 @@ def help_pannel(_, START: Union[bool, int] = None):
                     text=_["H_B_3"],
                     callback_data="help_callback hb3",
                 ),
-            ],
+           ],
+           [
+               InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+               InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+           ],
             mark,
         ]
     )
