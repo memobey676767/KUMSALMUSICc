@@ -8,18 +8,18 @@ from config import LOGGER_ID
 async def play_logs(message, streamtype):
     if await is_on_off(2):
         logger_text = f"""
-<b>{app.mention} ᴘʟᴀʏ ʟᴏɢ</b>
+<b>{app.mention} 𝗈𝗒𝗇𝖺𝗍𝗆𝖺 𝗅𝗈𝗀𝗎</b>
 
-<b>ᴄʜᴀᴛ ɪᴅ :</b> <code>{message.chat.id}</code>
-<b>ᴄʜᴀᴛ ɴᴀᴍᴇ :</b> {message.chat.title}
-<b>ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.chat.username}
+<b>𝖦𝗋𝗎𝗉 𝖨𝖽 :</b> <code>{message.chat.id}</code>
+<b>𝖦𝗋𝗎𝗉 𝖠𝖽ı :</b> {message.chat.title}
+<b>𝖦𝗋𝗎𝗉 𝖫𝗂𝗇𝗄𝗂 :</b> @{message.chat.username}
 
-<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>
-<b>ɴᴀᴍᴇ :</b> {message.from_user.mention}
-<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}
+<b>𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı 𝖨𝖽 :</b> <code>{message.from_user.id}</code>
+<b>𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı 𝖠𝖽ı :</b> {message.from_user.mention}
+<b>𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı 𝖫𝗂𝗇𝗄𝗂 :</b> @{message.from_user.username}
 
-<b>ǫᴜᴇʀʏ :</b> {message.text.split(None, 1)[1]}
-<b>sᴛʀᴇᴀᴍᴛʏᴘᴇ :</b> {streamtype}"""
+<b>𝖲𝗈𝗋𝗀𝗎 :</b> {message.text.split(None, 1)[1]}
+<b>𝖠𝗄ı𝗌̧ 𝖳𝗎̈𝗋𝗎̈ :</b> {streamtype}"""
         if message.chat.id != LOGGER_ID:
             try:
                 await app.send_message(
