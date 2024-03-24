@@ -6,41 +6,28 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get this value from my.telegram.org/apps
 API_ID = int(getenv("API_ID", "27843759"))
 API_HASH = getenv("API_HASH", "3d221e95ddabbc281a0347698584e0aa")
-
-# Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN", "7175095849:AAGRaD6VK0iXPIHgrD0c1GQiRMnflTKCnu8")
-
-# Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://botrobin72:robin72@cluster0.ynhazzk.mongodb.net/?retryWrites=true&w=majority")
-
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 500))
-
-# Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", "-1001881565361"))
-
-# Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 5931622575))
-
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/MehmetAtes21/Pi",
 )
-
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
-
-# Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
-
-# Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", "BAAzn_141ulDy5E_zn7HlrnPwVs7srvTIvPMZea-9rt4pVesbYxR1MkIroY2cZWOMwemESZh1WkfxN9mq8Y2cuTxxe0pfk8hH2U9koUV0vlaoPFTVu1hzPug9i77jQpaV0GfT0wjTNhDLMGkKBzTnmx6aHUaP2XtLawC-Y_i40kj-BVcjb6_OyCVkr0vDJN2f9wQSn94qVXmEhzCwKNH6t8SL6dpG9jrOTrQTMvqGtPQd5TcE8g-UOO8Dj4SiLd0KVdgmCQjbqbqOvREBqaSCi_hguVRqaYhKED8E1QNeCJiKdvmSj3KQpRjlqWdFYJxtj8f-6hM2y8Ox9J2GUrC70fmAAAAAaR10EAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
+
+
+
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
