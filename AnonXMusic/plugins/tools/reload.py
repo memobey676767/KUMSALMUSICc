@@ -17,7 +17,7 @@ rel = {}
 
 
 @app.on_message(
-    filters.command(["admincache", "reload", "refresh"]) & filters.group & ~BANNED_USERS
+    filters.command(["reload"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def reload_admin_cache(client, message: Message, _):
@@ -92,9 +92,9 @@ async def close_menu(_, query: CallbackQuery):
         await query.answer()
         await query.message.delete()
         umm = await query.message.reply_text(
-            f"Cʟᴏsᴇᴅ ʙʏ : {query.from_user.mention}"
+            f"𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı : {query.from_user.mention}"
         )
-        await asyncio.sleep(7)
+        await asyncio.sleep(2)
         await umm.delete()
     except:
         pass
