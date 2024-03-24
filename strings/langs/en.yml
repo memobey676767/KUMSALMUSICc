@@ -8,7 +8,7 @@ general_4 : "» sesli sohbeti yönetme izniniz yok.\n\nadmincache'i /reload ile 
 general_5 : "»  Bot sesli sohbette yayın yapmıyor."
 
 tg_1 : "<u><b>{0} indirici</b></u>\n\n<b>Dosya boyutu :</b> {1}\n<b>tamamlanmış :</b> {2}\n<b>yüzde :</b> {3}%\n\n<b>Hız :</b> {4}/s\n<b>eta :</b> {5}"
-tg_2 : "» başarıyla indirildi, dosya işleniyor...\n\n<b>geçen süre :<b>{0}
+tg_2 : "» başarıyla indirildi, dosya işleniyor...\n\n<b>geçen süre :<b>{0}"
 tg_3 : "telegramdan medya indirilemedi tekrar deneyin..."
 tg_4 : "» indirme zaten tamamlandı."
 tg_5 : "» indirme zaten tamamlandı veya iptal edildi."
