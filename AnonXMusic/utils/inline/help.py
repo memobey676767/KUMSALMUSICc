@@ -35,18 +35,17 @@ def help_pannel(_, START: Union[bool, int] = None):
             ],
             [
                 InlineKeyboardButton(
-                    text=_["H_B_3"],
-                    callback_data="help_callback hb3"
+                text=_["H_B_3"],
+                        callback_data="help_callback hb3"
                 )
             ],
             [
                 InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
                 InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT)
             ],
-            *mark if mark else []
+            *((mark,) if mark else ())
         ]
-    )
-    return upl
+        )
 
 
 def help_back_markup(_):
