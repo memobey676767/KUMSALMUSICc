@@ -16,10 +16,10 @@ pyrogram==2.0.106
 python-dotenv
 pyyaml
 requests
-speedtest-cli
 spotipy
 tgcrypto
 unidecode
-yt-dlp
-youtube-search
-youtube-search-python
+git+https://github.com/MehmetAtes21/ydpdl@master
+git+https://github.com/MehmetAtes21/histest@master
+git+https://github.com/MehmetAtes21/ytsearch@master
+git+https://github.com/alexmercerind/youtube-search-python@main
