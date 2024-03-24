@@ -7,12 +7,7 @@ import config
 
 def help_pannel(_, START: Union[bool, int] = None):
     first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
-    second = [
-        InlineKeyboardButton(
-            text=_["BACK_BUTTON"],
-            callback_data=f"settingsback_helper",
-        ),
-    ]
+    second = InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
     mark = second if START else first
     upl = InlineKeyboardMarkup(
         [
@@ -37,6 +32,10 @@ def help_pannel(_, START: Union[bool, int] = None):
                     text=_["H_B_3"],
                     callback_data="help_callback hb3",
                 ),
+             ],
+             [
+                 InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+                 InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
             ],
             mark,
         ]
