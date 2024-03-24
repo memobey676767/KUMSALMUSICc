@@ -12,7 +12,7 @@ from AnonXMusic.utils.database import (
 from strings import get_string
 
 
-@app.on_message(filters.command(["maintenance"]) & SUDOERS)
+@app.on_message(filters.command(["bakim"]) & SUDOERS)
 async def maintenance(client, message: Message):
     try:
         language = await get_lang(message.chat.id)
@@ -23,13 +23,13 @@ async def maintenance(client, message: Message):
     if len(message.command) != 2:
         return await message.reply_text(usage)
     state = message.text.split(None, 1)[1].strip().lower()
-    if state == "enable":
+    if state == "acik":
         if await is_maintenance() is False:
             await message.reply_text(_["maint_4"])
         else:
             await maintenance_on()
             await message.reply_text(_["maint_2"].format(app.mention))
-    elif state == "disable":
+    elif state == "kapali":
         if await is_maintenance() is False:
             await maintenance_off()
             await message.reply_text(_["maint_3"].format(app.mention))
