@@ -165,17 +165,17 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     for x in got:
         j += 1
         if j == 1:
-            msg += f'𝖮𝗒𝗇𝖺𝗍ı𝗅𝖺𝗇 :\n\n✨ 𝖡𝖺𝗌̧𝗅ı𝗄 : {x["title"]}\n𝖲𝗎̈𝗋𝖾 : {x["dur"]}\n𝖳𝖺𝗅𝖾𝗉 : {x["by"]}\n\n'
+            msg += f'➻ 𝖮𝗒𝗇𝖺𝗍ı𝗅𝖺𝗇 :\n\n📋 𝖡𝖺𝗌̧𝗅ı𝗄 : {x["title"]}\n⌚ 𝖲𝗎̈𝗋𝖾 : {x["dur"]}\n🗯️ 𝖳𝖺𝗅𝖾𝗉 : {x["by"]}\n\n'
         elif j == 2:
-            msg += f'𝖲ı𝗋𝖺𝖽𝖺𝗄𝗂𝗅𝖾𝗋 :\n\n✨ 𝖡𝖺𝗌̧𝗅ı𝗄 : {x["title"]}\n𝖲𝗎̈𝗋𝖾 : {x["dur"]}\n𝖳𝖺𝗅𝖾𝗉 : {x["by"]}\n\n'
+            msg += f'➻ 𝖲ı𝗋𝖺𝖽𝖺𝗄𝗂𝗅𝖾𝗋 :\n\n📋 𝖡𝖺𝗌̧𝗅ı𝗄 : {x["title"]}\n⌚ 𝖲𝗎̈𝗋𝖾 : {x["dur"]}\n🗯️ 𝖳𝖺𝗅𝖾𝗉 : {x["by"]}\n\n'
         else:
-            msg += f'✨ 𝖡𝖺𝗌̧𝗅ı𝗄 : {x["title"]}\n𝖲𝗎̈𝗋𝖾 : {x["dur"]}\n𝖳𝖺𝗅𝖾𝗉 : {x["by"]}\n\n'
+            msg += f'📋 𝖡𝖺𝗌̧𝗅ı𝗄 : {x["title"]}\n⌚𝖲𝗎̈𝗋𝖾 : {x["dur"]}\n🗯️ 𝖳𝖺𝗅𝖾𝗉 : {x["by"]}\n\n'
     if "𝖲ı𝗋𝖺𝖽𝖺𝗄𝗂𝗅𝖾𝗋" in msg:
         if len(msg) < 700:
             await asyncio.sleep(1)
             return await CallbackQuery.edit_message_text(msg, reply_markup=buttons)
-        if "✨" in msg:
-            msg = msg.replace("✨", "")
+        if "📋" in msg:
+            msg = msg.replace("📋", "")
         link = await AnonyBin(msg)
         med = InputMediaPhoto(media=link, caption=_["queue_3"].format(link))
         await CallbackQuery.edit_message_media(media=med, reply_markup=buttons)
