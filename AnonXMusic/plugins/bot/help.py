@@ -7,7 +7,7 @@ from AnonXMusic import app
 from AnonXMusic.utils import help_pannel
 from AnonXMusic.utils.database import get_lang
 from AnonXMusic.utils.decorators.language import LanguageStart, languageCB
-from AnonXMusic.utils.inline.help import private_help_panel
+from AnonXMusic.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
 
@@ -45,7 +45,7 @@ async def helper_private(
         )
 
 
-@app.on_message(filters.command(["help"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
 @LanguageStart
 async def help_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
@@ -57,9 +57,9 @@ async def help_com_group(client, message: Message, _):
 async def helper_cb(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     cb = callback_data.split(None, 1)[1]
+    keyboard = help_back_markup(_)
     if cb == "hb1":
-        await CallbackQuery.edit_message_text(helpers.HELP_1)
+        await CallbackQuery.edit_message_text(helpers.HELP_1, reply_markup=keyboard)
     elif cb == "hb2":
-        await CallbackQuery.edit_message_text(helpers.HELP_2)
+        await CallbackQuery.edit_message_text(helpers.HELP_2, reply_markup=keyboard)
     elif cb == "hb3":
-        await CallbackQuery.edit_message_text(helpers.HELP_3)
