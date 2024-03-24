@@ -149,7 +149,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention), reply_markup=close_markup(_)
         )
-    elif command == "Stop" or command == "End":
+    elif command == "End":
         await CallbackQuery.answer()
         await Anony.stop_stream(chat_id)
         await set_loop(chat_id, 0)
@@ -157,10 +157,10 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_5"].format(mention), reply_markup=close_markup(_)
         )
         await CallbackQuery.message.delete()
-    elif command == "Skip" or command == "Replay":
+    elif command == "Skip":
         check = db.get(chat_id)
         if command == "Skip":
-            txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f"➻ 𝖸𝖺𝗒ı𝗇 𝖠𝗍𝗅𝖺𝗍ı𝗅𝖽ı !\n│ \n└𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı : {mention}"
             popped = None
             try:
                 popped = check.pop(0)
@@ -168,7 +168,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
                 if not check:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        "➻ 𝖸𝖺𝗒ı𝗇 𝖠𝗍𝗅𝖺𝗍ı𝗅𝖽ı !\n│ \n└𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı : {mention}"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -183,7 +183,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 try:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        f"➻ 𝖸𝖺𝗒ı𝗇 𝖠𝗍𝗅𝖺𝗍ı𝗅𝖽ı !\n│ \n└𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı : {mention}"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -195,7 +195,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     return
         else:
-            txt = f"➻ sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f"➻ 𝖸𝖺𝗒ı𝗇 𝖠𝗍𝗅𝖺𝗍ı𝗅𝖽ı !\n│ \n└𝖪𝗎𝗅𝗅𝖺𝗇ı𝖼ı : {mention}"
         await CallbackQuery.answer()
         queued = check[0]["file"]
         title = (check[0]["title"]).title()
