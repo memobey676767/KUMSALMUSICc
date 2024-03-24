@@ -39,7 +39,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
              ],
              [
-                 InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+                 InlineKeyboardButton(text="✚ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ ✚", url="https://www.youtube.com/@EpikTv87"),
                  InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
             ],
             mark,
@@ -69,6 +69,7 @@ def private_help_panel(_):
                 text=_["S_B_4"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
+            InlineKeyboardButton(text="✚ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ ✚", url="https://www.youtube.com/@EpikTv87"),
         ],
     ]
     return buttons
