@@ -8,7 +8,7 @@ from ..logging import LOGGER
 
 class Anony(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot...")
+        LOGGER(__name__).info(f"𝖡𝗈𝗍 𝖺𝗄𝗍𝗂𝖿 𝖾𝖽𝗂𝗅𝖽𝗂 ...\n𝖸𝖺𝗋𝖽ı𝗆 ➻ @BotsDestek")
         super().__init__(
             name="AnonXMusic",
             api_id=config.API_ID,
@@ -29,26 +29,26 @@ class Anony(Client):
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<u><b>» {self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :</b><u>\n\nɪᴅ : <code>{self.id}</code>\nɴᴀᴍᴇ : {self.name}\nᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
+                text=f"<u><b>{self.mention} 𝖠𝗄𝗍𝗂𝖿 :</b><u>\n\n𝖨𝖽 : <code>{self.id}</code>\n𝖠𝖽ı : {self.name}\n𝖫𝗂𝗇𝗄𝗂 : @{self.username}\n\n𝖸𝖺𝗋𝖽ı𝗆 ➻ @BotsDestek",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
-                "Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel."
+                "𝖫𝗎̈𝗍𝖿𝖾𝗇 𝖡𝗈𝗍𝗎 & 𝖠𝗌𝗂𝗌𝗍𝖺𝗇ı 𝖫𝗈𝗀 𝖦𝗋𝗎𝖻𝗎𝗇𝗎𝗓𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇.."
             )
             exit()
         except Exception as ex:
             LOGGER(__name__).error(
-                f"Bot has failed to access the log group/channel.\n  Reason : {type(ex).__name__}."
+                f"𝖡𝗈𝗍 𝖫𝗈𝗀 𝖦𝗋𝗎𝖻𝗎𝗇𝖺 𝖤𝗋𝗂𝗌̧𝖾𝗆𝖾𝖽𝗂 .\n𝖭𝖾𝖽𝖾𝗇 : {type(ex).__name__}."
             )
             exit()
 
         a = await self.get_chat_member(config.LOGGER_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
             LOGGER(__name__).error(
-                "Please promote your bot as an admin in your log group/channel."
+                "𝖫𝗎̈𝗍𝖿𝖾𝗇 𝖡𝗈𝗍𝗎 & 𝖠𝗌𝗂𝗌𝗍𝖺𝗇ı 𝖫𝗈𝗀 𝖦𝗋𝗎𝖻𝗎𝗇𝗎𝗓𝖽𝖺 𝖸𝗈̈𝗇𝖾𝗍𝗂𝖼𝗂 𝖸𝖺𝗉ı𝗇."
             )
             exit()
-        LOGGER(__name__).info(f"Music Bot Started as {self.name}")
+        LOGGER(__name__).info(f"𝖡𝗈𝗍 𝖺𝗄𝗍𝗂𝖿 𝖾𝖽𝗂𝗅𝖽𝗂 {self.name}")
 
     async def stop(self):
         await super().stop()
