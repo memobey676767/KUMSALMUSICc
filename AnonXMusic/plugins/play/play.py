@@ -188,7 +188,7 @@ async def play_commnd(
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
                 return await mystic.edit_text(
-                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
+                    "➻ 𝖲𝗉𝗈𝗍𝗂𝖿𝗒 𝗈̈𝗓𝖾𝗅𝗅𝗂𝗀̆𝗂 𝖽𝖾𝗌𝗍𝖾𝗄𝗅𝖾𝗇𝗆𝗂𝗒𝗈𝗋 .\n𝖫𝗎̈𝗍𝖿𝖾𝗇 𝖽𝖺𝗁𝖺 𝗌𝗈𝗇𝗋𝖺 𝗍𝖾𝗄𝗋𝖺𝗋 𝖽𝖾𝗇𝖾𝗒𝗂𝗇 :-)"
                 )
             if "track" in url:
                 try:
