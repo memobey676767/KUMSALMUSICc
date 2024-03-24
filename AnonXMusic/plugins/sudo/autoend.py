@@ -12,12 +12,12 @@ async def auto_end_stream(_, message: Message):
     if len(message.command) != 2:
         return await message.reply_text(usage)
     state = message.text.split(None, 1)[1].strip().lower()
-    if state == "acik":
+    if state == "enable":
         await autoend_on()
         await message.reply_text(
             "➻ 𝖡𝖺𝗌̧𝖺𝗋ı𝗒𝗅𝖺 𝖺𝖼̧ı𝗅𝖽ı ."
         )
-    elif state == "kapali":
+    elif state == "disable":
         await autoend_off()
         await message.reply_text("➻ 𝖡𝖺𝗌̧𝖺𝗋ı𝗒𝗅𝖺 𝗄𝖺𝗉𝖺𝗍ı𝗅𝖽ı .")
     else:
