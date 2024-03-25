@@ -13,6 +13,9 @@
 
 -------------------
 
+- /sudoekle - Sudo kullanıcı ekle .
+- /sudosil - Sudo kullanıcı sil .
+- /sudolist - Sudo kullanıcı listesi .
 - /reklam - Gruplara Reklam Atar !
 - /karasohbet - Grubu kara listeye alır !
 - /beyazsohbet - Grubu beyaz listeye alır !
