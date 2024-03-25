@@ -33,12 +33,6 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
             ],
             [
-                InlineKeyboardButton(
-                    text=_["H_B_3"],
-                    callback_data="help_callback hb3",
-                ),
-             ],
-             [
                  InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
                  InlineKeyboardButton(text="✚  ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ  ", url="https://www.youtube.com/@EpikTv87"),
             ],
