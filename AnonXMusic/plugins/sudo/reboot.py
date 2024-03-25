@@ -21,7 +21,7 @@ from AnonXMusic.utils.decorators.language import language
 from AnonXMusic.utils.pastebin import AnonyBin
 
 
-@app.on_message(filters.command(["mdjkkd"]) & SUDOERS)
+@app.on_message(filters.command(["reboot"]) & SUDOERS)
 async def restart_(_, message):
     response = await message.reply_text("➻ 𝖸𝖾𝗇𝗂𝖽𝖾𝗇 𝖻𝖺𝗌̧𝗅𝖺𝗍ı𝗅ı𝗒𝗈𝗋 ...")
     ac_chats = await get_active_chats()
