@@ -16,17 +16,31 @@
 - /sudoekle - Sudo kullanıcı ekle .
 - /sudosil - Sudo kullanıcı sil .
 - /sudolist - Sudo kullanıcı listesi .
+
 - /reklam - Gruplara Reklam Atar !
+
 - /karasohbet - Grubu kara listeye alır !
+
 - /beyazsohbet - Grubu beyaz listeye alır !
+
 - /sohbetlist - Kara listedeki grupları görün !
+
 - /karakullanici - Kullanıcıyı kara listeye alır !
+
 - /beyazkullanici Kullanıcıyı beyaz listeye alır !
+
 - /kullanicilist - Kara listedeki kullanıcıları görün !
+
 - /logger enable - Günlük logu aktif edin !
+
 - /logger disable - Günlük logu kapatın !
+
 - /aktifses - Aktif sesli sohbetleri görün !
+
 - /aktifvideo - Aktif videolu sohbetleri görün !
+
 - /hiztest - Botun hızını test edin !
+
 - /ping - Botun pingine göz atın !
+
 - /reboot - Botunuza reset atın !
