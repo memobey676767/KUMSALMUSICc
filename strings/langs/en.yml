@@ -4,7 +4,7 @@ general_1 : "» Kullanıcının mesajını yanıtlayın veyakullanıcı kimliği
 general_2 : "» Sorgunuz işlenirken bir hata oluştu.\n\nİstisna : <code>{0}</code>"
 general_3 : "Bu sohbetin anonim moderatörüsünüz, beni kullanmak için kullanıcı hesabınıza geri dönün."
 general_4 : "» Video görüşmelerini yönetme izniniz yok.\n\nYönetici önbelleğini /reload ile yeniden yükleyin"
-general_5 : "Bot görüntülü arama yayınlamıyor.”
+general_5 : "Bot görüntülü arama yayınlamıyor."
 
 tg_1 : "<u><b>{0} İndirici</b></u>\n\n<b>Dosya Boyutu:</b> {1}\n<b>Tamamlandı:</b> {2}\ n<b>Yüzde:</b> {3}%\n\n<b>Hız:</b> {4}/s\n<b>Zaman tahmini:</b> {5}"
 tg_2 : "İndirme başarıyla tamamlandı, dosya işleniyor...\n\n<b>Alınan süre:</b> {0}"
@@ -32,17 +32,17 @@ auth_2 : "{0} yetkili kullanıcılar listesine eklendi."
 auth_3 : "{0} zaten yetkili kullanıcılar listesinde."
 auth_4 : "{0} yetkili kullanıcılar listesinden kaldırıldı."
 auth_5 : "{0} yetkili kullanıcılar listesinde değil."
-auth_6 : "» Yetkili kullanıcıların listesi alınıyor...”
+auth_6 : "» Yetkili kullanıcıların listesi alınıyor..."
 auth_7 : "» {0}:\n\n bölgesindeki yetkili kullanıcıların listesi"
 auth_8 : "<b>↬ Ekleyen:</b>"
 
 reload_1 : "» Yöneticiler önbelleği yalnızca 3 dakikada bir yenileyebilir.\n\nLütfen {0} tarihinden sonra deneyin."
-reload_2 : "“Yönetici önbelleği başarıyla güncellendi.”
+reload_2 : "“Yönetici önbelleği başarıyla güncellendi."
 reload_3 : "Moderatör önbelleği güncellenemedi. Botun sohbetinizde moderatör olduğundan emin olun."
 reload_4 : "» Lütfen bekleyin...\n\nGörüşmenizi {0} yeniden başlatın."
 reload_5 : "{0} sohbetinizi başarıyla yeniden başlattı.\n\nTekrar oynamaya başlayın..."
 
-admin_1 : "Yayına yeniden başladığınızı hatırlıyor musunuz?
+admin_1 : "Yayına yeniden başladığınızı hatırlıyor musunuz?"
 admin_2 : "➻ Yayın duraklatıldı 🎄\n│ \n└Yazan: {0} 🥀"
 admin_3 : "Yayını kapattığını hatırlıyor musun?"
 admin_4 : "➻ Yayın devam ettirildi 🎄\n│ \n└Yazan: {0} 🥀"
@@ -65,7 +65,7 @@ admin_20 : "<b>Örnek:</b>\n\n/seek veya /seekback [saniye cinsinden süre]"
 admin_21 : "» Lütfen aramanız için saniyeler içinde sayısal sayılar kullanın."
 admin_22 : "» Canlı videonun konumu değiştirilemez."
 admin_23 : "» Aramanızı daha kısa sürede kontrol etmeye çalışın. <b>{0}</b>, <b>{1}</b> dakikadan fazla oynatıldı."
-admin_24 : "<b>Arıyor...</b>\n\nLütfen bekleyin...”
+admin_24 : "<b>Arıyor...</b>\n\nLütfen bekleyin..."
 admin_25 : "» Yayın konumu başarıyla değiştirildi.\n\n<b>Süre:</b> {0} dakika\n<b>Yazan:</b> {1}"
 admin_26 : "Konum değiştirilemedi."
 admin_27 : "» Şu anda yalnızca YouTube akış hızını kontrol etmek mümkün."
@@ -76,7 +76,7 @@ admin_31 : "Hızı değiştirme..."
 admin_32 : "» Mevcut akışın hızı değiştirilmeye çalışılıyor...\n\n<b>İsteyen:</b> {0}"
 admin_33 : "Geçerli yayının hızı değiştirilemedi."
 admin_34 : "» Mevcut akış hızı {0}x\n\n<b>İsteyen:</b> {1} olarak değiştirildi"
-admin_35 : "Oylamanın sunulduğu parca sona erdiği için oylama süreci sona erdi.”
+admin_35 : "Oylamanın sunulduğu parca sona erdiği için oylama süreci sona erdi."
 admin_36 : "Oylamanın sunulduğu parçanın süresi dolduğu veya durdurulduğu için bu işlem gerçekleştirilemedi."
 admin_37 : "<code>{0}</code> olumlu oyu başarıyla alındı."
 admin_38 : "» Bir olumlu oy eklendi."
@@ -88,15 +88,15 @@ start_2 : "<b>Merhaba</b> {0}, 🥀\n\n๏ Ben {1}!\n\n➻ Telegram'da harika ö
 start_3 : "Merhaba {0},\nBu {1}\n\nBeni {2} grubuna eklediğiniz için teşekkürler, {3} artık bu sohbette şarkı çalabilir."
 start_4 : "🎄 <b>Süper Grup Gereklidir</b> 🎄\n\nLütfen <b>Grubunuzu</b> <b>Süper Grup</b>'a dönüştürün ve ardından beni tekrar ekleyin.\n\n<b>Nasıl Süper Grup Yapmak İster misiniz?</b>\n- Grubunuzun sohbet geçmişini bir kez <b>görünür</b> yapın"
 start_5 : "<b>↝ Kara Listeye Alınmış Sohbet ↜</b>\n\nBu sohbet, {0} veritabanında kara listeye alınmış sohbet olarak listelenmiştir.\n<a href={2}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ.</a>"
-start_6 : "😲 <b>Klip bilgisi</b> 😲\n\n📌 <b>Başlık:</b> {0}\n\n⏳ <b>Süre:</b> {1} dakika\n👀 <b>Görüntülemeler:</b> <code>{2}</code>\n⏰ <b>Yayın yeri:</b> {3}\n📎 <b>Kanal:</b> <a href ={4}>{5}</a>\n\n<u><b>🥀
+start_6 : "😲 <b>Klip bilgisi</b> 😲\n\n📌 <b>Başlık:</b> {0}\n\n⏳ <b>Süre:</b> {1} dakika\n👀 <b>Görüntülemeler:</b> <code>{2}</code>\n⏰ <b>Yayın yeri:</b> {3}\n📎 <b>Kanal:</b> <a href ={4}>{5}</a>\n\n<u><b>🥀"
 
-queue_1 : "» Sıra alınıyor...\n\nLütfen bekleyin...”
+queue_1 : "» Sıra alınıyor...\n\nLütfen bekleyin..."
 queue_2 : "Sıra boş."
 queue_3 : "<u>»Bekleyen kliplerin listesini kontrol etmek için burayı tıklayın:</u> <a href={0}>burayı</a>"
 queue_4 : "➲ <b>#{0} konumundaki bekleme listesine eklendi\n\n‣ Adres:</b> {1}\n<b>‣ Süre:</b> {2} dakika\n<b> ‣ Talep eden:</b>{3}"
 queue_5 : "Sırada yalnızca bir klip var.\n\nListeyi kontrol etmek için daha fazla klip ekleyin."
 queue_6 : "<b>🕚 Süre:</b> Yayın süresi bilinmiyor\n\nSıranın tamamı için aşağıdaki düğmeyi tıklayın."
-queue_7 : "\nBekleme listesinin tamamı için aşağıdaki düğmeyi tıklayın.
+queue_7 : "\nBekleme listesinin tamamı için aşağıdaki düğmeyi tıklayın."
 queue_8 : "<b>Oyuncu {0}</b>\n\n🎄 <b>Şu anda yayınlanıyor:</b> {1}\n\n🔗 <b>Yayın Türü :</b> {2}\ n 🥀 <b>İsteyen:</b> {3}\n{4}"
 
 stream_1 : "➲ <b>Yayını Başlat |</b>\n\n<b>‣ Başlık:</b> <a href={0}>{1}</a>\n<b>‣ Süre:</b> {2} dakika\n<b>‣ Talep eden:</b> {3}"
@@ -107,7 +107,7 @@ help_2 : "Özel mesajlarınızda yardım menüsüne ulaşmak için aşağıdaki 
 
 lang_1 : "» Lütfen bu grup için varsayılan dil olarak ayarlamak istediğiniz dili seçin:"
 lang_2 : "Dil başarıyla değiştirildi."
-lang_3 : "Dil değiştirilemedi.
+lang_3 : "Dil değiştirilemedi."
 lang_4 : "Zaten aynı dili konuşuyorsunuz."
 
 setting_1 : "<u><b>{0} Ayarlar Paneli</b></u>\n\n<b>Sohbet Kimliği:</b> <code>{1}</code>\n<b>Sohbet Başlığı :</b> {2}\n\nAyarları değiştirmek için aşağıdaki düğmeleri tıklayın."
@@ -115,28 +115,28 @@ setting_2 : "» Doğrudan: Aramaları doğrudan oynatır.\n\n» Satır içi: Vid
 setting_3 : "» Herkes: Bu grupta herkes yönetici komutlarını [atla, duraklat, devam ettir vb.] kullanabilir.\n\n» Yalnızca Yöneticiler: Yalnızca yöneticiler ve yetkili kullanıcılar yönetici komutlarını kullanabilir."
 setting_4 : "» Yetkili kullanıcı bulunamadı."
 setting_5 : "» Grup: Komutun verildiği grupta müzik çalar.\n\n» Kanal: İstediğiniz kanalda müzik çalar. Kanal kimliğini /kanalmodu yoluyla ayarlayın"
-setting_6 : "» Herkes: Bu grupta bulunan herkes burada müzik çalabilir.\n\n» Yalnızca moderatörler: Bu grupta yalnızca moderatörler müzik çalabilir.
+setting_6 : "» Herkes: Bu grupta bulunan herkes burada müzik çalabilir.\n\n» Yalnızca moderatörler: Bu grupta yalnızca moderatörler müzik çalabilir."
 setting_7 : "» Lütfen kanal kimliğini /kanalmodu yoluyla tanımlayın"
-setting_8 : "Bu mod etkinleştirildiğinde moderatör ayrıcalıklarına sahip olmayan kişiler, belirli sayıda oy sonrasında moderatör komutlarını kullanabilir.
+setting_8 : "Bu mod etkinleştirildiğinde moderatör ayrıcalıklarına sahip olmayan kişiler, belirli sayıda oy sonrasında moderatör komutlarını kullanabilir."
 setting_9 : "Yönetici komutlarını kullanmak için gereken mevcut oylar: {0}"
 setting_10 : "Oylama modu devre dışı bırakıldı."
 setting_11 : "Minimum oy sayısı 2 olabilir. 2'den aşağı ayarlayamazsınız"
 setting_12 : "En yüksek oy sayısı 15 olabilir. 15'in üzerine çıkamazsınız"
 
 set_cb_1 : "Yetkili Kullanıcılar panelini edinme..."
-set_cb_2 : "Çalışma modu paneli alınıyor...”
+set_cb_2 : "Çalışma modu paneli alınıyor..."
 set_cb_3 : "Ayarlar değiştiriliyor..."
-set_cb_4 : "“Yetkili kullanıcıların listesi alınıyor...”
+set_cb_4 : "Yetkili kullanıcıların listesi alınıyor..."
 set_cb_5 : "» Lütfen bekleyin..."
 
-gstats_1 : "İstatistikler ve bilgiler alınıyor {0}...\n\nBiraz zaman alabilir, lütfen bekleyin...”
+gstats_1 : "İstatistikler ve bilgiler alınıyor {0}...\n\nBiraz zaman alabilir, lütfen bekleyin..."
 gstats_2 : "{0} adlı kişinin istatistiklerini kontrol etmek için aşağıdaki düğmeleri tıklayın."
 gstats_3 : "<b><u>İstatistikler ve bilgiler {0}:</u></b>\n\n<b>Asistanlar:</b> <code>{1}</code>\n<b>Yasaklı : </b> <code>{2}</code>\n<b>Sohbetler :</b> <code>{3}</code>\n<b>Kullanıcılar :</b> <code> {4}</code>\n<b>Birimler" 
 gstats_4 : "Bu düğme yalnızca yöneticilere yöneliktir."
 gstats_5 : "<b><u>İstatistik Ve bilgi {0} :</u></b>\n\n<b>Birimler :</b> <code>{1}</code>\n<b>platformu :</b> <code>{2}</code>\n<b>hafıza (RAM) :</b> <code>{3}</code>\n<b>Gerçek çekirdekler :</b> <code>{4}</code>\n<b>Toplam çekirdek :</b> <code>{5}</code>\n<b>CPU frekansı :</b> <code>{6}</code>\n\n<b>piton :</b> <code>{7}</code>\n<b>Pyrogram :</b> <code>{8}</code>\n<b>Py-TgCalls :</b> <code>{9}</code>\n\n<b>Kullanılabilir depolama alanı :</b> <code>{10} Büyük Britanya</code>\n<b>Kullanılan depolama :</b> <code>{11} Büyük Britanya</code>\n<b>Kalan depolama alanı :</b> <code>{12} Büyük Britanya</code>\n\n<b>Servis sohbetleri :</b> <code>{13}</code>\n<b>Hizmet verilen kullanıcılar :</b> <code>{14}</code>\n<b>Yasaklanan kullanıcılar :</b> <code>{15}</code>\n<b>Kullanıcılar sudo :</b> <code>{16}</code>\n\n<b>Toplam veritabanı boyutu :</b> <code>{17} Megabayt</code>\n<b>Toplam veritabanı depolama kapasitesi :</b> <code>{18} Megabayt</code>\n<b>Toplam veritabanı veri kümeleri :</b> <code>{19}</code>\n<b>Toplam veritabanı anahtarları :</b> <code>{20}</code>"
 
 playcb_1 : "Ah, bu sana göre değil aşkım."
-playcb_2 : "» Aşağıdaki sonuç elde ediliyor,\n\nLütfen bekleyin...”
+playcb_2 : "» Aşağıdaki sonuç elde ediliyor,\n\nLütfen bekleyin..."
 
 cplay_1 : "» {0} kanalındaki kanallarda başka herhangi bir kanala veya sohbete bağlı kanala müzik çalabilirsiniz.\n\n<b>Bağlantılı kanal için:</b>\n<code>/kanalmodu bağlantılı</code> \n\n<b>Başka herhangi bir kanal için:</b>\n/kanalmodu [ID]"
 cplay_2 : "» Bu sohbetin ilişkili bir kanalı yok."
@@ -164,13 +164,13 @@ play_15 : "» Sorgu işlenemedi.\n\nYalnızca Spotify parçalarını, albümleri
 play_16 : "Aktif sesli sohbet yok.\n\nZorunlu oynatmayı kullanmak için aktif sesli sohbetin olması gerekir."
 play_17 : "Lütfen görüntülü sohbeti açın, URL'leri oynatamıyorum."
 play_18 : "<b>Kullanım:</b> /oynat [şarkı adı/YouTube başlığı/ses/videoya yanıt]"
-play_19 : "Oynatma listesi bekleniyor:
+play_19 : "Oynatma listesi bekleniyor:"
 play_20 : "Sıradaki konumu -"
 play_21 : "{0} parça bekleme listesine eklendi.\n\n<b>Doğrulama:</b> <a href={1}>Burayı tıklayın</a>"
 play_22 : "Kümenizde sorguları çalıştırmak istediğiniz modu seçin: {0}"
 
 str_1 : "Lütfen m3u8 veya dizin bağlantılarını sağlayın."
-str_2 : "➻Geçerli akış doğrulandı.\n\nİşleniyor...”
+str_2 : "➻Geçerli akış doğrulandı.\n\nİşleniyor..."
 str_3 : "YouTube canlı akışı yayınlanamadı, canlı yayın formatı bulunamadı."
 
 ping_1 : "{0} için ping işlemi tamamlandı..."
@@ -232,7 +232,7 @@ QU_B_1 : "Bekleme listesi"
 QU_B_2 : " {0} —————————— {1}"
 
 sudo_1 : "{0} zaten sudo kullanıcı listesinde."
-sudo_2 : "“{0}, sudo kullanıcı listesine eklendi.”
+sudo_2 : "{0}, sudo kullanıcı listesine eklendi."
 sudo_3 : "» {0}, sudo kullanıcı listesinde bulunamadı."
 sudo_4 : "» {0}, sudo kullanıcı listesinden kaldırıldı."
 sudo_5 : "<u><b>🥀 sahip :</b></u>\n"
@@ -245,7 +245,7 @@ block_2 : "» {0}, engellenen kullanıcılar listesine eklendi."
 block_3 : "» {0} engellenen kullanıcılar listesinde değil."
 block_4 : "» {0}, engellenen kullanıcılar listesinden kaldırıldı."
 block_5 : "» Engellenen kullanıcı yok."
-block_6 : "» Engellenen kullanıcıların listesi alınıyor...”
+block_6 : "» Engellenen kullanıcıların listesi alınıyor..."
 block_7 : "<b>😫 Yasaklanan kullanıcılar :</b>\n\n"
 
 black_1 : "<b>Örnek:</b>\n\n/blacklistchat [sohbet kimliği]"
@@ -262,17 +262,17 @@ maint_1 : "<b>Örnek:</b>\n/bakım [etkinleştir| devre dışı bırakmak]"
 maint_2 : "» Bakım modu {0} etkinleştirildi."
 maint_3 : "» Bakım modu devre dışı bırakıldı {0}."
 maint_4 : "» Bakım modu zaten etkin."
-maint_5 : "“Bakım modu zaten devre dışı.”
+maint_5 : "“Bakım modu zaten devre dışı."
 
 log_1 : "<b>kullanım :</b>\n/logger [enable | disable]"
 log_2 : "Veri kaydı etkinleştirildi."
 log_3 : "Veri kaydı devre dışı bırakıldı."
 
-broad_1 : "» Yayına başlayın...
+broad_1 : "» Yayına başlayın..."
 broad_2 : "<b>Örnek:</b>\n\n/broadcast [mesaj gönderin veya bir mesaja yanıt verin]"
 broad_3 : "» Mesaj, bottan yüklenen {0} ile {1} arasındaki sohbete yayınlandı."
 broad_4 : "Mesaj {0} kullanıcıya yayınlandı."
-broad_5 : "» Asistanı yayınlamaya başla...”
+broad_5 : "» Asistanı yayınlamaya başla..."
 broad_6 : "➻ Yardımcı Yayın:\n\n"
 broad_7 : "↬ Asistan {0}, {1} sohbetinde yayınlandı."
 broad_8 : "» Lütfen yayın için bir transkript sağlayın."
