@@ -26,3 +26,4 @@
 - /aktifvideo - Aktif videolu sohbetleri görün !
 - /hiztest - Botun hızını test edin !
 - /ping - Botun pingine göz atın !
+- /reboot - Botunuza reset atın !
