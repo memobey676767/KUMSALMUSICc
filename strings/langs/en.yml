@@ -102,8 +102,8 @@ queue_8 : "<b>Oyuncu {0}</b>\n\n🎄 <b>Şu anda yayınlanıyor:</b> {1}\n\n🔗
 stream_1 : "➲ <b>Yayını Başlat |</b>\n\n<b>‣ Başlık:</b> <a href={0}>{1}</a>\n<b>‣ Süre:</b> {2} dakika\n<b>‣ Talep eden:</b> {3}"
 stream_2 : "➲ <b>Yayını başlat |</b>\n\n<b>‣ Yayın türü:</b>Canlı yayın [bağlantı]\n<b>‣ Talep eden:</b> {0}"
 
-help_1 : "Yardım istediğiniz kategoriyi seçin.\n<a href={0}>Destek Sohbeti</a>'nden şikâyetiniz hakkında bilgi alın\n\nTüm komutlar şununla kullanılabilir: <code>/</code>"
-help_2 : "Özel mesajlarınızda yardım menüsüne ulaşmak için aşağıdaki butona tıklayın."
+help_1 : "<b> Yardım istediğiniz kategoriyi seçin.</b>\n\n<a href={0}>Destek Sohbeti</a><b>'nden şikâyetiniz hakkında bilgi alın .</b>\n\n<b>Tüm komutlar şununla kullanılabilir: /</b>"
+help_2 : "<b> Özel mesajlarınızda yardım menüsüne ulaşmak için aşağıdaki butona tıklayın.</b>"
 
 lang_1 : "» Lütfen bu grup için varsayılan dil olarak ayarlamak istediğiniz dili seçin:"
 lang_2 : "Dil başarıyla değiştirildi."
@@ -180,7 +180,7 @@ CLOSE_BUTTON : "Kapat"
 BACK_BUTTON : "Geri"
 
 S_B_1 : "beni ekle"
-S_B_2 : "destek"
+S_B_2 : "Destek"
 S_B_3 : "Beni grubunuza ekleyin"
 S_B_4 : "Yardım"
 S_B_5 : "Geliştirici"
