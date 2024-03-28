@@ -1,10 +1,23 @@
 {
-  "name": "Epic Music",
+  "name": "TeslaGame",
   "version": "1.0.0",
-  "dependencies": {
-    "pyrogram": "pyrogram==2.0.106"
-  },
+  "description": "Grup sohbetlerinde «yaşı tahmin et» oyunu oynamak için telgraf botu.",
+  "main": "AnonXMusic",
   "scripts": {
-    "postinstall": "npm install node@15"
+    "start": "node start"
+  },
+  "author": "https://t.me/StarBotOwner",
+  "license": "ISC",
+  "homepage": "https://t.me/TahminDuyuru",
+  "dependencies": {
+    "@edjopato/telegraf-i18n": "^0.2.2",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "js-yaml": "^4.1.0",
+    "mongoose": "^5.12.13",
+    "telegraf": "^4.10.0"
+  },
+  "engines": {
+    "node": "15.x"
   }
 }
