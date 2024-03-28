@@ -23,4 +23,3 @@ git+https://github.com/MehmetAtes21/ydpdl@master
 git+https://github.com/MehmetAtes21/histest@master
 git+https://github.com/MehmetAtes21/ytsearch@master
 git+https://github.com/alexmercerind/youtube-search-python@main
-ᴀᴅᴍɪɴ
