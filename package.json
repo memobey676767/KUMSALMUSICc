@@ -1,0 +1,10 @@
+{
+  "name": "Epic Music",
+  "version": "1.0.0",
+  "dependencies": {
+    "pyrogram": "pyrogram==2.0.106"
+  },
+  "scripts": {
+    "postinstall": "npm install node@15"
+  }
+}
