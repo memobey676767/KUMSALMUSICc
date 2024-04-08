@@ -6,21 +6,21 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH", "")
-BOT_TOKEN = getenv("BOT_TOKEN", "")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+API_ID = int(getenv("API_ID", "26348115"))
+API_HASH = getenv("API_HASH", "8da1c482cbcd3b30bd76dbf6e57daa18")
+BOT_TOKEN = getenv("BOT_TOKEN", "7176272848:AAESpeSQ2TRbegJ1LIjLzpcYeqVz0L4eio8")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Kingbrukh:kingkhan@kingbruh.ra3pjgm.mongodb.net/?retryWrites=true&w=majority")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 500))
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
-OWNER_ID = int(getenv("OWNER_ID", 5931622575))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001595674917"))
+OWNER_ID = int(getenv("OWNER_ID", 5805605739))
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "",
 )
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/HoligrasProject")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Holigras")
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BABg9AYqtfnds1IHZcMZ3lsiJJXMfueWDixsM-dQgR4JrOhqOtzJXa6309x6nbatzdcL0ZJPsl-J6SqjsAbe09VNJplscP1v2Hgv84QvZK0uF7UxFOTXKELTME8_UC9Q8NHZUuFgudwbOibfBOoXos24EOXUpuZj2hUMCmnqILRNSflS58Npej2QPRMPZ6pgVatsF_tAAuwyZ-6dilyjv448WGn87TGeesuX4ECftJaVX1uDR8mU18rieoE0q6asrrgzKal42dMIyCJEa0giGHuvxjtHL2MYIg3mkFrtAT_YUXmDsmm5ZcKyI-oQPR8G08kq-IjeyLNeU2dsJ_r2C7X2AAAAAYGHWVQA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
