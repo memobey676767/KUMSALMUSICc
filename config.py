@@ -6,21 +6,21 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH", "")
-BOT_TOKEN = getenv("BOT_TOKEN", "")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+API_ID = int(getenv("API_ID", "26953933"))
+API_HASH = getenv("API_HASH", "4bc2a58e7308a9da35bae33f68691d74")
+BOT_TOKEN = getenv("BOT_TOKEN", "6803669543:AAFNzstLnDW4Seq7t3M-ReK1tBu9POuv9xo")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 500))
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
-OWNER_ID = int(getenv("OWNER_ID", 5931622575))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002119401642"))
+OWNER_ID = int(getenv("OWNER_ID", 6772793255))
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "",
+    "https://github.com/Meyit47zade/Pi",
 )
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/")
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
-STRING1 = getenv("STRING_SESSION", "")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/S1F1RB1RKANAL")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/S1F1RB1RCHAT")
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+STRING1 = getenv("STRING_SESSION", "BACgINcnEgRwqA4y5JhiCR01aO5PQuqMsoaSpc5b7eRufW7Catgs_F30Bu3dNunYvIqrH9MVeSXFbCiqHCJP-_LcvtgwVZIY7iT8-1zySzwYUOls5vPlCdkacXcxUBm1Yoj7CamE1eBcHHNAAWl2A0_wX4L_WA8iprUVTiqClKvR-WDHc8Pz1at8mmeDtKGHRtAf58eceRs5HVMIjkr3ekDNOnsPQ1bDWwL7pk9osq6T-Y6rOdTXzzpnrVZ0lZ6BkLg1k8hZwgq-FacEdfVz9PNE1KnJbXtTminIItNep0yW178XQ3YPS6jPWqwIK6GGKBOuyxipA_F-665Nqh1wM5CVAAAAAYPhwgQA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -36,8 +36,8 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
@@ -54,7 +54,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/e03cc83b0c9219c804c9e.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/18ca7e679473e35fff993.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
