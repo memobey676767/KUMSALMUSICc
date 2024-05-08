@@ -8,7 +8,7 @@ from ..logging import LOGGER
 
 class Anony(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"𝖡𝗈𝗍 𝖺𝗄𝗍𝗂𝖿 𝖾𝖽𝗂𝗅𝖽𝗂 ...\n𝖸𝖺𝗋𝖽ı𝗆 ➻ @BotsDestek")
+        LOGGER(__name__).info(f"𝖡𝗈𝗍 𝖺𝗄𝗍𝗂𝖿 𝖾𝖽𝗂𝗅𝖽𝗂 ...\n𝖸𝖺𝗋𝖽ı𝗆 ➻ @MytUpdate")
         super().__init__(
             name="AnonXMusic",
             api_id=config.API_ID,
@@ -29,7 +29,7 @@ class Anony(Client):
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<u><b>{self.mention} 𝖠𝗄𝗍𝗂𝖿 :</b><u>\n\n𝖨𝖽 : <code>{self.id}</code>\n𝖠𝖽ı : {self.name}\n𝖫𝗂𝗇𝗄𝗂 : @{self.username}\n\n𝖸𝖺𝗋𝖽ı𝗆 ➻ @BotsDestek",
+                text=f"<u><b>{self.mention} 𝖠𝗄𝗍𝗂𝖿 :</b><u>\n\n𝖨𝖽 : <code>{self.id}</code>\n𝖠𝖽ı : {self.name}\n𝖫𝗂𝗇𝗄𝗂 : @{self.username}\n\n𝖸𝖺𝗋𝖽ı𝗆 ➻ @MytUpdate",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
