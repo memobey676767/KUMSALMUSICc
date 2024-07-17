@@ -17,8 +17,8 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/Meyit47zade/Pi",
 )
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Sohbet_Kazani")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Delular_Sohbet")
+SUPPORT_CHANNEL = getenv("https://t.me/Sohbet_Kazani")
+SUPPORT_CHAT = getenv("https://t.me/Delular_Sohbet")
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 STRING1 = getenv("STRING_SESSION", "BAA8HE4ANPe8V1ueNOei5oDCohnIT-J8oHzUivrHI41bQcncoZgCTQFitJl0z4E5UIhiQTLhocii77h2hEF2qS0XO2XpR0ZUAdZcccpRHBr3X8o_QKWk8oM3umTH5LJ4U8YsGoh37onjuAJ-3kS1mxU2n-4aEFSLbbzihJbzlrSFdy_XcW10BtiXUYJEPxZJ0w4VuI79AkS6t_dOzn7Z-MEVKQ6Qj2ltlAnD6lEWG2WP-FKgLW21zEQnfxe2r-Pvn9DgUgUXCGhFTWnIYiCkuWVvidYdkB74pVisIDaWg6M-_8kCP7I5ItH6eSyg-kZ6y8OGMNYh32sfvNi56iIfUbiKZfEligAAAAGpqF6bAA")
 STRING2 = getenv("STRING_SESSION2", None)
@@ -80,13 +80,13 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://t.me/DelularSohbet", SUPPORT_CHANNEL):
+    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
 
 if SUPPORT_CHAT:
-    if not re.match("(?:http|https)://DelularSohbet", SUPPORT_CHAT):
+    if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
