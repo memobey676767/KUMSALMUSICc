@@ -6,7 +6,7 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "3939406"))
+API_ID = int(getenv("API_ID", 3939406))
 API_HASH = getenv("API_HASH", "e11d0eaec136b1047974ab098041e9f2")
 BOT_TOKEN = getenv("BOT_TOKEN", "7332188935:AAHr_WmJ63kvoGRLinMsyk3lagrDAb53aPY")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
