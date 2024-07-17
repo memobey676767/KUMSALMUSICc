@@ -6,21 +6,21 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "26953933"))
-API_HASH = getenv("API_HASH", "4bc2a58e7308a9da35bae33f68691d74")
+API_ID = int(getenv("API_ID", "3939406"))
+API_HASH = getenv("API_HASH", "e11d0eaec136b1047974ab098041e9f2")
 BOT_TOKEN = getenv("BOT_TOKEN", "7203169161:AAFE9lD7nnCMYNqiY3P-g0d2RoAp5H3fYC8")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 500))
-LOGGER_ID = int(getenv("LOGGER_ID", "1002235377494"))
-OWNER_ID = int(getenv("OWNER_ID", 6510559004))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002244663689"))
+OWNER_ID = int(getenv("OWNER_ID", 6510559004)
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/Meyit47zade/Pi",
 )
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/S1F1RB1RKANAL")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/S1F1RB1RCHAT")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Sohbet_Kazani")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Delular_Sohbet")
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
-STRING1 = getenv("STRING_SESSION", "BAGbSM0AVNfkcDhD1Ywy9H9RpUsq2vR-M3D0PFr_rSUe8EdejcNA7k3nHRTwrFhBd9CO6ppdlGBG6Khkbn4EjUCruD7CFpqYGTJdY3Vdb8EWViL1SClwc5_eoT44x6bgvLoKfWD7L2IJdOqLjl_WvKwHSUOALuERVVN-W3tYg0lUYS0zxxn_I0ic10ToxV1lii-WVQTHbp-GE7RaM7Pter9k2RdAkONMtI1Ey2hhZQKZxbW0APnJ1nFsFrqV0sX2NakjcmovtIeuRpML5-2uNcRW98SEivr94G7hP214iyphhZuO6m5s5oGVwH0QRlJXwQAXfK-3NXODEMKfg9LaePy2x3k4BQAAAAGD4cIEAA")
+STRING1 = getenv("STRING_SESSION", "BAA8HE4ANPe8V1ueNOei5oDCohnIT-J8oHzUivrHI41bQcncoZgCTQFitJl0z4E5UIhiQTLhocii77h2hEF2qS0XO2XpR0ZUAdZcccpRHBr3X8o_QKWk8oM3umTH5LJ4U8YsGoh37onjuAJ-3kS1mxU2n-4aEFSLbbzihJbzlrSFdy_XcW10BtiXUYJEPxZJ0w4VuI79AkS6t_dOzn7Z-MEVKQ6Qj2ltlAnD6lEWG2WP-FKgLW21zEQnfxe2r-Pvn9DgUgUXCGhFTWnIYiCkuWVvidYdkB74pVisIDaWg6M-_8kCP7I5ItH6eSyg-kZ6y8OGMNYh32sfvNi56iIfUbiKZfEligAAAAGpqF6bAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
