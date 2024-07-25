@@ -19,7 +19,15 @@ UPSTREAM_REPO = getenv(
 )
 SUPPORT_CHANNEL = getenv("https://t.me/Sohbet_Kazani")
 SUPPORT_CHAT = getenv("https://t.me/Delular_Sohbet")
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+
+# Time after which you're assistant account will leave chats automatically.
+
+AUTO_LEAVE_ASSISTANT_TIME = int(
+
+    getenv("ASSISTANT_LEAVE_TIME", "3400")
+
+) 
 STRING1 = getenv("STRING_SESSION", "BAG2fWUAqKKuPBKwVc4LE-_NexX7Re3Yes_cWXMA7IQNdfDuWMIpSjH7KC8EtfFwPpRiUvtc2YFALQkkSw73Q5xbdHAFvt_-ACJz-Jz9rUk_3AIEeLr5w4xx5k8nqGbR6uMYsYZMpuXcIEtveGf3WKXQ0cb91VZ1aXghef6mggPHRQB_Rale1IdOCevUivqnTRVi1VKQyzqFaqOkY2ja9EUZi-aYH1DKgbT7nFy3jb9NoN8LmrkQD3DhcvJzVyo4bWghG8ErfTBCTx0lwp0tLYUSDe06UPmfnDAkvXO3n6nOFoiAih-DfDLyneMhAVw4QpZjQG39UWCDEOeEceTVhQJMkwzecQAAAAGpqF6bAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
