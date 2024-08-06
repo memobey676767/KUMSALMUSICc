@@ -136,6 +136,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
                 text="▷",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
+    InlineKeyboardButton(text="{kumsal destek}", url="https://t.me/SohbetQs"),
         ],
     ]
     return buttons
