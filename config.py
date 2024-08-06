@@ -6,29 +6,21 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", 3939406))
-API_HASH = getenv("API_HASH", "e11d0eaec136b1047974ab098041e9f2")
-BOT_TOKEN = getenv("BOT_TOKEN", "6904551522:AAEZWqdxJw3Fs0BjaVVTIp94Ot6kqdkgB1s")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 500))
-LOGGER_ID = int(getenv("LOGGER_ID", -1002244663689))
-OWNER_ID = int(getenv("OWNER_ID", 6510559004))
+API_ID = int(getenv("API_ID", "22160237"))
+API_HASH = getenv("API_HASH", "095b9df69b08c2dcffbdd2f8542e3280")
+BOT_TOKEN = getenv("BOT_TOKEN", "7164261117:7066329662:AAFpadkd6qX7uQyCzayxRnfE7MyH9vNifkw")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://kurt67143:nays@cluster0.vjg7bma.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 5400))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002222241971"))
+OWNER_ID = int(getenv("OWNER_ID", "5587097134"))
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Meyit47zade/Pi",
+    "",
 )
-SUPPORT_CHANNEL = getenv("https://t.me/Sohbet_Kazani")
-SUPPORT_CHAT = getenv("https://t.me/Delular_Sohbet")
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
-
-# Time after which you're assistant account will leave chats automatically.
-
-AUTO_LEAVE_ASSISTANT_TIME = int(
-
-    getenv("ASSISTANT_LEAVE_TIME", "3400")
-
-) 
-STRING1 = getenv("STRING_SESSION", "BAG2fWUAqKKuPBKwVc4LE-_NexX7Re3Yes_cWXMA7IQNdfDuWMIpSjH7KC8EtfFwPpRiUvtc2YFALQkkSw73Q5xbdHAFvt_-ACJz-Jz9rUk_3AIEeLr5w4xx5k8nqGbR6uMYsYZMpuXcIEtveGf3WKXQ0cb91VZ1aXghef6mggPHRQB_Rale1IdOCevUivqnTRVi1VKQyzqFaqOkY2ja9EUZi-aYH1DKgbT7nFy3jb9NoN8LmrkQD3DhcvJzVyo4bWghG8ErfTBCTx0lwp0tLYUSDe06UPmfnDAkvXO3n6nOFoiAih-DfDLyneMhAVw4QpZjQG39UWCDEOeEceTVhQJMkwzecQAAAAGpqF6bAA")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kumsaldestekkanal")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kumsalmuzikk")
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+STRING1 = getenv("STRING_SESSION", "AgFSI20ASxD6Sm1GllHf6t5kX4LNedWp1cazmqmUX3TNe66H3lOeSin4UL6XXM-NWBy-mXEYlyELIWI-IR0UDa3UgWae0joml4WOpQLV5NfhCki4iJYkVMnqTJlm6kU2sSSiM7F3wkvBdBVn-5fDoSbEiGUfBAzOzxgJVMgXu-AJiW5dd7WcJHqTOzpzOaAhluS3jb90tgHCnuKa4iJEoLSAiWZRQpQhro5AeboMJ0Hv7HCSyVyyIB1vnaMX_nBrPAV7Px-wq70ylfTBM3fynSA3blOkOlrEGwWYHO4iQrIZdslnqW0zAKAL0pY_lwPA30eFb0heHaP6cSbT7jg9HN1P7k5yMAAAAAG4T-CvAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -44,8 +36,8 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
@@ -62,21 +54,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", ""
+    "START_IMG_URL", "https://graph.org/file/e5a809fe337adff6f4d4a.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+    "PING_IMG_URL", "https://graph.org/file/0160271dbe745b3b02366.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+STATS_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+STREAM_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
 
 
 def time_to_seconds(time):
@@ -97,4 +89,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
