@@ -18,7 +18,7 @@ UPSTREAM_REPO = getenv(
     "",
 )
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kumsaldestekkanal")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kumsalmuzikk")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/gecemavisisohbett")
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 STRING1 = getenv("STRING_SESSION", "AgFSI20ASxD6Sm1GllHf6t5kX4LNedWp1cazmqmUX3TNe66H3lOeSin4UL6XXM-NWBy-mXEYlyELIWI-IR0UDa3UgWae0joml4WOpQLV5NfhCki4iJYkVMnqTJlm6kU2sSSiM7F3wkvBdBVn-5fDoSbEiGUfBAzOzxgJVMgXu-AJiW5dd7WcJHqTOzpzOaAhluS3jb90tgHCnuKa4iJEoLSAiWZRQpQhro5AeboMJ0Hv7HCSyVyyIB1vnaMX_nBrPAV7Px-wq70ylfTBM3fynSA3blOkOlrEGwWYHO4iQrIZdslnqW0zAKAL0pY_lwPA30eFb0heHaP6cSbT7jg9HN1P7k5yMAAAAAG4T-CvAA")
 STRING2 = getenv("STRING_SESSION2", None)
